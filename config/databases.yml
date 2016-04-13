@@ -1,0 +1,28 @@
+#
+# Fishrdb and CA database references
+#
+ca:
+  development:
+    adapter: mysql
+    encoding: utf8
+    database: ca_promemoria_reference
+    username: fishrdb
+    password: fishrdb
+    host: localhost
+
+  test:
+    adapter: mysql
+    encoding: utf8
+    database: ca_promemoria_reference_test
+    username: fishrdb
+    password: fishrdb
+    host: localhost
+
+fishrdb:
+  development:
+    adapter: mysql
+    encoding: utf8
+    database: fishrdb_development
+    username: fishrdb
+    password: fishrdb
+    host: localhost
