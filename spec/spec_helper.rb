@@ -1,3 +1,3 @@
 require 'byebug'
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'fishrdb_CA_migration'
+$LOAD_PATH.unshift File.expand_path(File.join(['..'] * 2, 'lib', 'CA'), __FILE__)
+require 'management'

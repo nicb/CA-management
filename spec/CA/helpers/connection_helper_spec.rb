@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe FishrdbCAMigration::Helpers::ConnectionHelper do
+describe CA::Management::Helpers::ConnectionHelper do
 
-  include FishrdbCAMigration::Helpers::ConnectionHelper
+  include CA::Management::Helpers::ConnectionHelper
 
   before :example do
-    @conn_parms = YAML.load(File.open(FishrdbCAMigration::Helpers::ConnectionHelper::DATABASE_CONFIG_FILE, 'r'))
+    @conn_parms = YAML.load(File.open(CA::Management::Helpers::ConnectionHelper::DATABASE_CONFIG_FILE, 'r'))
   end
 
   it 'returns the proper connection parameters' do
